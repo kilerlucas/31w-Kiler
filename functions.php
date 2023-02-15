@@ -34,4 +34,4 @@ add_theme_support( 'custom-logo',
         ) );
     }
     add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
-                   
+                    
