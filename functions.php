@@ -32,8 +32,9 @@ add_theme_support( 'custom-logo',
         ) );
     }
     add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
-                   
-    /**
+
+
+/**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
  * Dépendant de la condition initiale on peut filtrer un type particulier de requête
@@ -41,11 +42,11 @@ add_theme_support( 'custom-logo',
  * @param WP_query  $query la requête principal de WP
  */
 function cidweb_modifie_requete_principal( $query ) {
-    if (    $query->is_home() //si page d'accueil
-            && $query->is_main_query() // si requete principal
+    if (    $query->is_home() // si page d'accueil
+            && $query->is_main_query() // si requête principale
             && ! is_admin() ) { // non tableau de bord
-      $query->set( 'category_name', 'note-wp' ); // filtre les articles de categorie "note-wp"
-      $query->set( 'orderby', 'title' ); // trie selon le titre
+      $query->set( 'category_name', 'note-wp' ); // filtre les articles de categorie «note-wp»
+      $query->set( 'orderby', 'title' );// trie selon le titre
       $query->set( 'order', 'ASC' ); // en ordre ascendant
       }
      }

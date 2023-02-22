@@ -2,7 +2,7 @@
 
 ## Améliorer la stucture générale du thème
 
-### Auteur: Eddy Martin
+### Auteur: Lucas Kiler
 
 #### Objectifs
 
@@ -30,3 +30,10 @@
   - La page d'accueil est original
   - La pagination est bien structurée
   - Le Sass est bien commenté
+
+
+## GitHub:
+### https://github.com/kilerlucas/31w/tree/exer2
+
+## Wordpress:
+### https://aecweb12.sg-host.com
