@@ -391,13 +391,14 @@ p {
 
 .logomenu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .menu-entete-container {
   background-color: #333;
-  padding: 8px;
+  padding: 15px;
 }
 .menu-entete-container .menu {
   display: flex;
