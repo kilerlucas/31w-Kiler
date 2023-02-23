@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }  
   
   .menu-entete-container {
     background-color: #333;
