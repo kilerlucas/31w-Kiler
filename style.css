@@ -24,7 +24,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.45; /* 1 */
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -49,8 +49,8 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 1.80em;
-  margin: 1em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -71,7 +71,7 @@ hr {
  */
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1.2em; /* 2 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -80,7 +80,7 @@ pre {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  background-color: lightgrey;
+  background-color: transparent;
 }
 
 /**
@@ -385,31 +385,32 @@ p {
 }
 
 /* -------------------------- COMPOSANT */
-.logomenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.site__entete {
+  border: 1px solid #ccc;
 }
 
 .menu-entete-container {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 .menu-entete-container .menu {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: auto;
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .menu-entete-container .menu .menu-item {
-  flex: 1 0 50px;
+  display: inline-block;
+  padding: 10px;
 }
 .menu-entete-container .menu .menu-item a {
-  padding: 3px 5px;
-  color: #555;
+  color: #fff;
+  text-decoration: none;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #0f0;
+  color: #000;
 }
 
 .blocflex {
@@ -418,8 +419,8 @@ p {
   flex-wrap: wrap;
 }
 .blocflex article {
-  margin: 10px;
+  margin: 5px;
   padding: 5px;
-  border: 1px solid #aaa;
-  flex: 1 0 250px;
-}
+  border: 1px solid #43446c;
+  flex: 1 0 300px;
+}/*# sourceMappingURL=style.css.map */
