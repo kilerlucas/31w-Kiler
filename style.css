@@ -386,7 +386,7 @@ p {
 
 /* -------------------------- COMPOSANT */
 .site__entete {
-  border: 1px solid #ccc;
+  border: 7px solid #ff0000;
 }
 
 .logomenu {
@@ -435,4 +435,9 @@ nav {
   padding: 5px;
   border: 1px solid #43446c;
   flex: 1 0 300px;
+}
+
+.recherche article {
+  background-color: bisque;
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
