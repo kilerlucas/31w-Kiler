@@ -385,44 +385,71 @@ p {
 }
 
 /* -------------------------- COMPOSANT */
-.site__entete {
-  border: 7px solid #ff0000;
-}
-
-.logomenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+img {
+  border: 2px solid #ffffff;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
+  flex: 1;
 }
 
-.menu-entete-container {
-  background-color: #b12f2f;
-  padding: 15px;
+.nav-menu li {
+  list-style: none;
+  margin: 0;
 }
-.menu-entete-container .menu {
+
+.site__entete ul {
+  list-style: none;
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
-.menu-entete-container .menu .menu-item {
+
+.site__entete li {
   margin: 0 10px;
+  padding: 0 1rem;
 }
-.menu-entete-container .menu .menu-item a {
-  color: #fff;
+
+.site__entete a {
+  color: #333;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
-  padding: 10px;
-  transition: background-color 0.3s ease;
 }
-.menu-entete-container .menu .menu-item a:hover {
-  background-color: #626262;
+
+.site__entete a:hover {
+  background-color: #ffffff;
+  color: #28353b;
+}
+
+.logomenu {
+  display: flex;
+  align-items: center;
+  background-color: #28353b;
+  padding: 40px;
+  height: 30px;
+}
+
+.horizontal-menu a {
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+ul.menu {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  margin-left: 5vw;
 }
 
 .blocflex {
@@ -432,12 +459,27 @@ nav {
 }
 .blocflex article {
   margin: 5px;
-  padding: 5px;
-  border: 1px solid #43446c;
+  padding: 10px;
+  border: 3px solid white;
+  background-color: #28353b;
+  color: white;
   flex: 1 0 300px;
+}
+.blocflex article a {
+  color: white;
+}
+.blocflex article:hover {
+  border: 3px solid #cd6504;
+  background-color: white;
+  color: #28353b;
 }
 
 .recherche article {
   background-color: bisque;
   margin: 10px;
+}
+
+main {
+  width: 75%;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

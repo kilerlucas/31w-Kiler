@@ -13,7 +13,8 @@
             <?php the_custom_logo(); ?> 
             <?php wp_nav_menu(array(
                 'menu' => 'entete',
-                'container' => 'nav'
+                'container' => 'nav',
+                'container_class' => 'horizontal-menu'
             )); ?> 
             <?= get_search_form(); ?>    
         </section>
