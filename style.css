@@ -23,6 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -385,9 +386,12 @@ p {
 }
 
 /* -------------------------- COMPOSANT */
+.site__entete {
+  font-family: "Share Tech Mono", monospace;
+}
+
 img {
   border: 2px solid #ffffff;
-  display: flex;
 }
 
 nav {
@@ -457,6 +461,7 @@ h1, h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-family: "Share Tech Mono", monospace;
 }
 .blocflex article, .blocflex a {
   margin: 5px;
@@ -484,4 +489,8 @@ h1, h2 {
 main {
   width: 75%;
   margin: auto;
+}
+
+h2, h3, a {
+  font-family: "Share Tech Mono", monospace;
 }/*# sourceMappingURL=style.css.map */
