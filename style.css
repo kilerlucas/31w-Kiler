@@ -387,6 +387,7 @@ p {
 /* -------------------------- COMPOSANT */
 img {
   border: 2px solid #ffffff;
+  display: flex;
 }
 
 nav {
@@ -470,6 +471,9 @@ h1, h2 {
   color: #cd6504;
   background-color: white;
   border-radius: 10%;
+}
+.blocflex h5 {
+  line-height: 50px;
 }
 
 .recherche article {
