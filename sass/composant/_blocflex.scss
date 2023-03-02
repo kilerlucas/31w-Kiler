@@ -2,15 +2,8 @@
     display : flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    article, a {
-        margin : 5px;
-        padding : 10px;
-        border : 3px solid white;
-        background-color: #28353b;
-        color: white;
-        flex: 1 0 300px;
-        border-radius: 10%;
-    }
+    
+
 
 
 
@@ -34,3 +27,19 @@
 
 
 }
+
+.blocflex__article, a {
+    margin : 5px;
+    padding : 10px;
+    border : 3px solid white;
+    background-color: #28353b;
+    color: white;
+    flex: 1 0 300px;
+    border-radius: 10%;
+}
+
+.blocflex__galerie {
+    flex: 1 0 100%;
+}
+
+
