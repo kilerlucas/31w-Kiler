@@ -5,7 +5,8 @@ Mise en page avec display : grid
 .site__entete {
     grid-area: header;
     padding: 1rem clamp(1rem, 3vw, 20rem);
-    background-color: antiquewhite;
+    background-color: #9fc8db;
+    color: #ffffff;
   }
   
   .site__main {
@@ -15,14 +16,30 @@ Mise en page avec display : grid
   
   .site__footer {
     grid-area: footer;
-    background-color: antiquewhite;
+    background-color: #9fc8db;
   }
 
 
   .site__aside {
     grid-area: aside;
-    background-color: rgb(47, 148, 210);
+    background-color: #65818f;
+    text-decoration: none;
+    color: #ffffff;
   }
+
+  .site__aside h3 {
+  margin-left: 50px;
+  }
+
+  .site__aside a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    border: 3 solid  #cd6504 ;
+    }
+
+
 
 /* body ou une conteneur global */
   .site {
@@ -41,4 +58,7 @@ Mise en page avec display : grid
       "aside main"
       "footer footer";     
     }
+
+
   }
+  

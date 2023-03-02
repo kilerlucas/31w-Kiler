@@ -3,6 +3,25 @@
   font-family: 'Share Tech Mono', monospace;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28353b;
+  padding: 40px;
+  height: 30px;
+}
+
+.menusearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+}
+
+
+
 
 
 img{
@@ -20,11 +39,7 @@ nav {
 }
 
 .site__entete ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
 }
 
 .site__entete li {
@@ -33,7 +48,7 @@ nav {
 }
 
 .site__entete a {
-  color: #333;
+  color: white;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -44,13 +59,7 @@ nav {
   color: #cd6504;
 }
   
-.logomenu {
-  display: flex;
-  align-items: center;
-  background-color: #28353b;
-  padding: 40px;
-  height: 30px;
-}
+
 
 
 .horizontal-menu a{
@@ -62,11 +71,7 @@ nav {
 }
 
 ul.menu {
-  display: flex;
-  flex: 1;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 h1, h2 {

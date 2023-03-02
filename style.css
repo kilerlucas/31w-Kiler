@@ -390,6 +390,23 @@ p {
   font-family: "Share Tech Mono", monospace;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28353b;
+  padding: 40px;
+  height: 30px;
+}
+
+.menusearch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+  gap: 30px;
+}
+
 img {
   border: 2px solid #ffffff;
 }
@@ -405,11 +422,7 @@ nav {
 }
 
 .site__entete ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
 }
 
 .site__entete li {
@@ -418,7 +431,7 @@ nav {
 }
 
 .site__entete a {
-  color: #333;
+  color: white;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -427,14 +440,6 @@ nav {
 .site__entete a:hover {
   background-color: #ffffff;
   color: #cd6504;
-}
-
-.logomenu {
-  display: flex;
-  align-items: center;
-  background-color: #28353b;
-  padding: 40px;
-  height: 30px;
 }
 
 .horizontal-menu a {
@@ -446,11 +451,7 @@ nav {
 }
 
 ul.menu {
-  display: flex;
-  flex: 1;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 h1, h2 {
@@ -479,6 +480,14 @@ h1, h2 {
 .blocflex h5 {
   line-height: 50px;
 }
+.blocflex article {
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid white;
+  background-color: #28353b;
+  color: white;
+  flex: 1 0 300px;
+}
 
 .recherche article {
   background-color: bisque;
@@ -501,7 +510,8 @@ Mise en page avec display : grid
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: #9fc8db;
+  color: #ffffff;
 }
 
 .site__main {
@@ -511,12 +521,26 @@ Mise en page avec display : grid
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
+  background-color: #9fc8db;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: #65818f;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site__aside h3 {
+  margin-left: 50px;
+}
+
+.site__aside a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px;
+  border: 3 solid #cd6504;
 }
 
 /* body ou une conteneur global */
