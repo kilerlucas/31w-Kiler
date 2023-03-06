@@ -442,7 +442,8 @@ nav {
   color: #cd6504;
 }
 
-.horizontal-menu a {
+/*
+.horizontal-menu a{
   font-size: 20px;
   border: 2px solid #ffffff;
   color: white;
@@ -458,36 +459,73 @@ h1, h2 {
   margin-left: 5vw;
 }
 
+*/
+.menu-entete-container .menu {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.menu-entete-container .menu .menu-item {
+  flex: 1 0 50px;
+}
+.menu-entete-container .menu .menu-item a {
+  padding: 3px 5px;
+  color: #555;
+}
+.menu-entete-container .menu .menu-item a:hover {
+  color: #0f0;
+}
+
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.blocflex article a:hover {
-  color: #cd6504;
-  background-color: white;
-  border-radius: 10%;
-}
-.blocflex h5 {
-  line-height: 50px;
-}
-.blocflex article {
-  margin: 10px;
-  padding: 10px;
-  border: 3px solid white;
-  background-color: #28353b;
-  color: white;
-  flex: 1 0 300px;
+
+/*
+
+    article a:hover{
+        color: #cd6504;
+        background-color: white;
+        border-radius: 10%;
+    }
+
+    h5 {
+        line-height: 50px;
+      }
+      article {
+        margin : 10px;
+        padding : 10px;
+        border : 3px solid white;
+        background-color: #28353b;
+        color: white;
+        flex: 1 0 300px;
+    }
+
+
 }
 
 .blocflex__article, a {
-  margin: 5px;
-  padding: 10px;
-  border: 3px solid white;
-  background-color: #28353b;
-  color: white;
+    margin : 5px;
+    padding : 10px;
+    border : 3px solid white;
+    background-color: #28353b;
+    color: white;
+    flex: 1 0 300px;
+    border-radius: 10%;
+}
+
+.blocflex__galerie {
+    flex: 1 0 100%;
+}
+
+*/
+.blocflex__article {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #aaa;
   flex: 1 0 300px;
-  border-radius: 10%;
 }
 
 .blocflex__galerie {
@@ -533,6 +571,8 @@ Mise en page avec display : grid
   grid-area: aside;
   background-color: #65818f;
   text-decoration: none;
+  margin-left: auto;
+  margin-bottom: auto;
   color: #ffffff;
 }
 
@@ -544,7 +584,7 @@ Mise en page avec display : grid
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
-  padding: 5px;
+  padding: 10px;
   border: 3 solid #cd6504;
 }
 

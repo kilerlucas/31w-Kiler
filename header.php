@@ -24,7 +24,6 @@
     </header>
     <aside class="site__aside">
         <h3>Menu Secondaire</h3>
-
         <?php 
         $category = get_queried_object();
         if (isset($category))

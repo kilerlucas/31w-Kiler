@@ -24,6 +24,8 @@ Mise en page avec display : grid
     grid-area: aside;
     background-color: #65818f;
     text-decoration: none;
+    margin-left: auto;
+    margin-bottom: auto;
     color: #ffffff;
   }
 
@@ -35,7 +37,7 @@ Mise en page avec display : grid
     text-decoration: none;
     color: #ffffff;
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
     border: 3 solid  #cd6504 ;
     }
 
@@ -58,7 +60,5 @@ Mise en page avec display : grid
       "aside main"
       "footer footer";     
     }
-
-
   }
   
