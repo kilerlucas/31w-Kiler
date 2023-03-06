@@ -14,7 +14,6 @@
     <section>
         <h4>Contact</h4>
         <p><?php bloginfo('name'); ?></p>
-        <p><?php bloginfo('description'); ?></p>
         <p><?php bloginfo('admin_email'); ?></p>
         <p><?php bloginfo('url'); ?></p>
     </section>
