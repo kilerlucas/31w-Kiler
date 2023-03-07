@@ -13,19 +13,13 @@ Mise en page avec display : grid
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   }
-  
-  .site__footer {
-    grid-area: footer;
-    background-color: #9fc8db;
-  }
 
 
   .site__aside {
     grid-area: aside;
     background-color: #65818f;
     text-decoration: none;
-    margin-left: auto;
-    margin-bottom: auto;
+    padding: 30px;
     color: #ffffff;
   }
 

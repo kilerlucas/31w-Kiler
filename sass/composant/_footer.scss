@@ -1,5 +1,7 @@
-.site__footer h3 {
-    font-family: 'Share Tech Mono', monospace;
-    justify-content: center;
-    color: #cd6504;
+.site__footer {
+    grid-area: footer;
+    color: white;
+    text-decoration: none;
+    background-color: #9fc8db;
+    padding: 30px;
   }

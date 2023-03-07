@@ -7,14 +7,13 @@
     <section>
         <h4>Liens utiles</h4>
         <?php wp_nav_menu(array(
-            'menu' => 'pied',
+            'menu' => 'footer',
             'container' => false,
         )); ?> 
     </section>
     <section>
         <h4>Contact</h4>
         <p><?php bloginfo('name'); ?></p>
-        <p><?php bloginfo('admin_email'); ?></p>
         <p><?php bloginfo('url'); ?></p>
     </section>
 

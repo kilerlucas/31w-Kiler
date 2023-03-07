@@ -442,8 +442,7 @@ nav {
   color: #cd6504;
 }
 
-/*
-.horizontal-menu a{
+.horizontal-menu a {
   font-size: 20px;
   border: 2px solid #ffffff;
   color: white;
@@ -459,7 +458,6 @@ h1, h2 {
   margin-left: 5vw;
 }
 
-*/
 .menu-entete-container .menu {
   display: flex;
   justify-content: flex-end;
@@ -546,6 +544,14 @@ h2, h3, p {
   font-family: "Share Tech Mono", monospace;
 }
 
+.site__footer {
+  grid-area: footer;
+  color: white;
+  text-decoration: none;
+  background-color: #9fc8db;
+  padding: 30px;
+}
+
 /* -------------------------- LAYOUT */
 /**
 Mise en page avec display : grid
@@ -562,17 +568,11 @@ Mise en page avec display : grid
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.site__footer {
-  grid-area: footer;
-  background-color: #9fc8db;
-}
-
 .site__aside {
   grid-area: aside;
   background-color: #65818f;
   text-decoration: none;
-  margin-left: auto;
-  margin-bottom: auto;
+  padding: 30px;
   color: #ffffff;
 }
 

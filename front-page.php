@@ -1,25 +1,29 @@
 <?php
 /**
-    Modèle index.php représente le modèle par défaut du thème
-*/
-get_header() ?>
+ * The template for displaying the front page.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twenty_One
+ * @since Twenty Twenty-One 1.0
+ */
+
+get_header();
+?>
 <main class="site__main">
-    <code>front-page.php</code>
-
     <section class="blocflex">
-        <?php 
-        echo do_shortcode('[metaslider id="252"]'); 
-        if (have_posts()):
-            while (have_posts()) : the_post(); ?>
-            <?php if (in_category('galerie')){
-                get_template_part("template-parts/categorie", "galerie"); 
-            }
-            else{
-                get_template_part("template-parts/categorie", "note-wp"); 
-            }
-            endwhile; ?>
-        <?php endif; ?>  
+        <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php if ( in_category( 'galerie' ) ) : ?>
+                    <?php get_template_part( 'template-parts/categorie', 'galerie' ); ?>
+                <?php else : ?>
+                    <?php get_template_part( 'template-parts/categorie', 'note-wp' ); ?>
+                <?php endif; ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
     </section>
-</main> 
-<?php get_footer(); ?>
-
+</main>
+<?php
+get_footer();
+?>
