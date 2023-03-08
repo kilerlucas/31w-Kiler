@@ -600,7 +600,8 @@ h2, h3, p {
 }
 
 .site__footer {
-  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   text-decoration: none;
   background-color: #9fc8db;

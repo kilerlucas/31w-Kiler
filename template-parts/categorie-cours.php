@@ -6,7 +6,7 @@
  */
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
-$titre_long = substr($titre, 7, -5);
+$titre_long = substr($titre, 7, -5); //MELHORAR O CODIGO AQUI PRO TP1!!!!!!!!
 $duree = "90h";
 ?>
 <article class="blocflex__article">
@@ -15,3 +15,5 @@ $duree = "90h";
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
     <p><?= $duree ?></p>
 </article>
+
+

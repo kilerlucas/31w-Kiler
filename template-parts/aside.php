@@ -1,4 +1,4 @@
-<aside class="site__aside">
+    <aside class="site__aside">
         <h3 class="site__aside-titre">Menu Secondaire</h3>
         <?php 
         $category = get_queried_object();
