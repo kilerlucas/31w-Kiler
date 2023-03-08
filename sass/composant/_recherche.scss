@@ -1,7 +1,33 @@
 .recherche {
-
-    article {
-        background-color: bisque;
-        margin: 10px;
-    }
-}
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .recherche-item {
+    margin-right: 10px;
+  }
+  
+  .recherche-item label {
+    display: none;
+  }
+  
+  .recherche-item input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .recherche-item input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recherche-item input[type="submit"]:hover {
+    background-color: #666;
+  }
