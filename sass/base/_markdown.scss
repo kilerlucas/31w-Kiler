@@ -1,16 +1,14 @@
 ul,ol{}
-ul li { //les listes à puces
+ul li {}
+ol li {}
+
+strong,  b {//: le texte en gras
+
 }
-ol li { //les listes numérotées
+em , i { //le texte en italique
 }
-strong, b{ //le texte en gras
-} 
-em, i { //le texte en italique
-} 
-a { //les liens hypertexte
-}
-code {//le texte en code
-}
-hr {//la ligne de séparation horizontale
-}
+a{} 
+
+code {}
+hr {}
 

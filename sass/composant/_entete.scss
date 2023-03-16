@@ -1,120 +1,86 @@
 
 .site__entete {
-  font-family: 'Share Tech Mono', monospace;
+
+}
+.logomenu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.logomenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #28353b;
-  padding: 40px;
-  height: 30px;
-}
-
-img{
-  border: 2px solid #ffffff;
-}
-
-nav {
-  display: flex;
-  flex: 1;
-}
-
-.nav-menu li {
-  list-style: none;
-  margin: 0;
-}
-
-.site__entete ul {
-  display: flex;
-}
-
-.site__entete li {
-  margin: 0 10px;
-  padding: 0 1rem;
-}
-
-.site__entete a {
-  color: white;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.site__entete a:hover {
-  background-color: #ffffff;
-  color: #cd6504;
-}
-
-.horizontal-menu a{
-  font-size: 20px;
-  border: 2px solid #ffffff;
-  color: white;
-  padding: 10px;
-  border-radius: 10%;
-}
-
-ul.menu {
-  list-style: none;
-}
-
-h1, h2 {
-  margin-left: 5vw;
-}
-
-
-/* Positionner le menu à côté du logo */
 .menusearch {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display : flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    @media screen and (min-width:1000px) {
+        flex-direction: row;
+        align-items:center;
+        justify-content: flex-end;
+        flex: 1;
+    }
 }
 
-/* Ajouter un effet de transition aux liens de menu */
-.menu-item a {
-  transition: color 0.3s ease-in-out;
+#chkBurger {
+    display : none;
+}
+#chkBurger:checked ~ .menu-entete-container {
+    transform : translateX(0);
+}
+.burger {
+    display : block;
+    @media screen and (min-width: 500px) {
+    display: none;    
+}
 }
 
-/* Modifier la couleur de fond et la couleur de texte lorsqu'un lien de menu est survolé */
-.menu-item a:hover {
-  background-color: #ffffff;
-  color: #1369ce;
+.menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .25s;
+    @media screen and (min-width: 500px) {
+        transform : translateX(0);  
 }
 
-/* Ajouter des styles de bouton */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+.menu { //ul 
+    display : flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    list-style-type: none;
+@media screen and (min-width: 500px) {
+    flex-direction : row;  
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+    
+ 
+ 
+   // margin-left : auto;
+
+.menu-item { // li
+        flex : 1 0 50px;
+
+    a{
+        white-space: nowrap;
+        padding : 3px 5px;
+        color : #555;
+    }
+    a:hover {
+        color : #0f0;
+    }
+
 }
 
-/* Modifier les couleurs de fond et de texte du bouton principal */
-.button-primary {
-  background-color: #1369ce;
-  color: #ffffff;
 }
 
-/* Modifier les couleurs de fond et de texte du bouton secondaire */
-.button-secondary {
-  background-color: #ffffff;
-  color: #1369ce;
 }
 
-
-
-
-
-
-
-
-
-
-
+.recherche {
+    display : flex;
+    flex-wrap: nowrap;
+}
 
 

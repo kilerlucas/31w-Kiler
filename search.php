@@ -5,7 +5,7 @@
 get_header() ?>
 <main class="site__main">
     <code>search.php</code>
-    <section class="recherche">
+    <section class="main__recherche">
 <?php 
 if (have_posts()):
     while (have_posts()) : the_post();
@@ -13,12 +13,11 @@ if (have_posts()):
         //the_permalink(); ?>
         <article>
         <h5><a href="<?php the_permalink(); ?>"><?= get_the_title();  ?> </a></h5>
-        <?= wp_trim_words(get_the_excerpt(), 30);?> 
+        <?= wp_trim_words(get_the_excerpt(), 30);?>
         </article>
         <hr>
     <?php endwhile;
-endif;
-?>   
-</section>
+endif; ?>  
+</section> 
 </main> 
 <?php get_footer(); ?>

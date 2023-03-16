@@ -41,27 +41,3 @@ h1 {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
     }
-
-
-// Mixins
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 767px) {
-  /* Styles pour les écrans de 767px de largeur ou moins */
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Styles pour les écrans de 768px à 991px de largeur */
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* Styles pour les écrans de 992px à 1199px de largeur */
-}
-
-@media screen and (min-width: 1200px) {
-  /* Styles pour les écrans de 1200px de largeur ou plus */
-}

@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="en">
 <head>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo( 'name' ); ?></title>
+    <title>Document</title>
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 </head>
-<body <?php body_class( 'site' ); ?>>
+<body class="site <?= (is_front_page() ? "no-aside" : "");  ?> ">
     <header class="site__entete">  
         <section class="logomenu">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <?php the_custom_logo(); ?>
-            </a>
+            <?php the_custom_logo(); ?> 
             <div class="menusearch">
-                <?php wp_nav_menu( array(
-                    'menu'       => 'entete',
-                    'container'  => 'nav',
-                    'menu_class' => 'menu',
-                ) ); ?>
-                <div class="menu-item-search">
-                    <?php get_search_form(); ?>
-                </div>
-            </div>   
+                <input type="checkbox" id="chkBurger">
+                <?php wp_nav_menu(array(
+                    'menu' => 'entete',
+                    'container' => 'nav'
+                )); ?> 
+                <?= get_search_form(); ?>
+                <label for="chkBurger" class="burger">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
+                </label>   
+            </div> 
         </section>
-        <hgroup class="site__entete-titres">
-            <h1 class="site__titre"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-            <h2 class="site__sous-titre"><?php bloginfo( 'description' ); ?></h2>
-        </hgroup>
+        <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
+        <h2><?php  bloginfo('description'); ?></h2>
     </header>
+    <?php 
+    if (is_front_page() == false)
+    {
+       get_template_part("template-parts/aside");
+    }
+     ?>
     
- <?php get_template_part("template-parts/aside"); ?>
