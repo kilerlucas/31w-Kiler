@@ -1,8 +1,7 @@
 <footer class="site__footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-12">
-                <h4>Menu</h4>
+        <div class="row d-flex justify-content-center">
+            <div>
                 <?php
                 wp_nav_menu(
                     array(
@@ -13,20 +12,20 @@
                 );
                 ?>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <h4>Links</h4>
-                <ul class="list-unstyled">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+            <div class="col col-md-6">
+                <h4>Réseaux sociaux</h4>
+                <ul class="social-media-icons">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <h4>Contact Us</h4>
+            <div class="col col-md-6 text-md-right">
+                <h4>Contact Nous</h4>
                 <p>123 Main St.</p>
-                <p>Anytown, USA 12345</p>
+                <p>Montreal, QC 12345</p>
                 <p>Phone: (123) 456-7890</p>
-                <p>Email: info@example.com</p>
+                <p>Email: info@lucaskiler.com</p>
             </div>
         </div>
     </div>

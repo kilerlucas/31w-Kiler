@@ -13,11 +13,6 @@
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.site__footer {
-  grid-area: footer;
-  background-color: #590000;
-}
-
 .site__aside {
   grid-area: aside;
   background-color: #ae3f26;
