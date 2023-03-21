@@ -33,4 +33,8 @@
      get_template_part("template-parts/aside");
     }
      ?>
+     <?php wp_footer(); ?>
+</body>
+</html>
+
      
