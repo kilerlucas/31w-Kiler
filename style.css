@@ -545,6 +545,10 @@ a:hover {
   margin: 0 -15px;
 }
 
+.col-md-6 {
+  margin-left: 100px;
+}
+
 .col-md-4 {
   position: relative;
   width: 100%;
