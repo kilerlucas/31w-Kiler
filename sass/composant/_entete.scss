@@ -2,7 +2,7 @@
   text-align: center;
 
   a {
-      color: #ae3f26;
+      color: #28353b;
       text-decoration: none;
   }
 }
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243 239 239);
+  background-color: rgb(190, 95, 0);
 }
 
 .logomenu img {
@@ -82,11 +82,12 @@
       white-space: nowrap;
       font-family: 'Roboto', sans-serif;
       text-decoration: none;
-      color: #ae3f26;
+      color: #ffffff;
 
   }
   a:hover {
-      color: #590000;
+      color:  #833615;
+      border: 2 solid, white;
       
   }
 }

@@ -336,34 +336,12 @@ html {
 }
 
 /* -------------------------- BASE */
-/* apply same font to all pages */
-body {
-  font-family: "Arial", sans-serif;
-}
-
-/* apply same color palette to all pages */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
-}
-
-/* use color variables throughout the site */
-h1, h2, h3, h4, h5, h6, a, p, span {
-  color: var(--primary-color);
-}
-
 /* -------------------------- COMPOSANT */
 .site__entete {
   text-align: center;
 }
 .site__entete a {
-  color: #ae3f26;
+  color: #28353b;
   text-decoration: none;
 }
 
@@ -371,7 +349,7 @@ h1, h2, h3, h4, h5, h6, a, p, span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243, 239, 239);
+  background-color: rgb(190, 95, 0);
 }
 
 .logomenu img {
@@ -448,10 +426,11 @@ h1, h2, h3, h4, h5, h6, a, p, span {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  color: #ae3f26;
+  color: #ffffff;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #590000;
+  color: #833615;
+  border: 2 solid, white;
 }
 
 .recherche {
@@ -517,20 +496,20 @@ a:hover {
 }
 
 .site__footer {
-  background-color: #F8F8F8;
-  color: #666;
+  background-color: #28353b;
+  color: #ffffff;
   padding: 50px 0;
   font-size: 16px;
   width: 100vw;
 }
 
 .site__footer a {
-  color: #666;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .site__footer a:hover {
-  color: #000;
+  color: #ff9500;
   text-decoration: underline;
 }
 
@@ -600,8 +579,7 @@ a:hover {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: #666;
-  color: #fff;
+  background-color: #b45a00;
   border-radius: 50%;
 }
 
@@ -622,7 +600,7 @@ a:hover {
 
 .site__aside {
   grid-area: aside;
-  background-color: #ae3f26;
+  background-color: #f3efef;
 }
 
 .site__aside h3 {
