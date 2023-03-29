@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body class= "custom-background site <?= (is_front_page() ? "no-aside" : ""); ?> ">
+<body class="site <?= (is_front_page() ? "no-aside" : ""); ?> ">
     <header class="site__entete">
         <section class="logomenu">
             <?php the_custom_logo(); ?>
@@ -33,7 +32,3 @@
      get_template_part("template-parts/aside");
     }
      ?>
-     <?php wp_footer(); ?>
-
-
-     
