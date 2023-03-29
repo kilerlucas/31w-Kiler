@@ -410,7 +410,7 @@ p {
   text-align: center;
 }
 .site__entete a {
-  color: #28353b;
+  color: #ae3f26;
   text-decoration: none;
 }
 
@@ -418,7 +418,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(190, 95, 0);
+  background-color: rgb(243, 239, 239);
 }
 
 .logomenu img {
@@ -495,11 +495,10 @@ p {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: #ae3f26;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #833615;
-  border: 2 solid, white;
+  color: #590000;
 }
 
 .recherche {
