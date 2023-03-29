@@ -11,15 +11,6 @@
                     )
                 );
                 ?>
-            </div>
-            <div class="col col-md-6">
-                <h4>Réseaux sociaux</h4>
-                <ul class="social-media-icons">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
             <div class="col col-md-6 text-md-right">
                 <h4>Contact Nous</h4>
                 <p>123 Main St.</p>
