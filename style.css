@@ -325,7 +325,7 @@ template {
   display: none;
 }
 
-/* Définition du box sizing */
+/* Dêfinition du box sizing */
 ::before,
 ::after {
   box-sizing: inherit;
@@ -563,6 +563,21 @@ a:hover {
   }
 }
 
+.menu-note-wp-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-note-wp-container .menu .menu-item {
+  list-style-type: none;
+}
+
 .site__footer {
   background-color: #28353b;
   color: #ffffff;
@@ -651,6 +666,14 @@ a:hover {
   border-radius: 50%;
 }
 
+body {
+  background-color: white;
+}
+
+.liensfrontpage {
+  text-align: center;
+}
+
 /* -------------------------- LAYOUT */
 /**
 * Mise en page - display grid
@@ -658,18 +681,22 @@ a:hover {
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
+  background-color: rgb(243, 239, 239);
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color: #b0763b;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #590000;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: #f3efef;
+  background-color: #ae3f26;
 }
 
 .site__aside h3 {

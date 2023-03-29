@@ -5,18 +5,22 @@
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: transparent;
+  background-color: rgb(243 239 239);
 }
 
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  background-color:#b0763b;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #590000;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: #f3efef;
+  background-color: #ae3f26;
 }
 
 .site__aside h3{
