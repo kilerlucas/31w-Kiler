@@ -1,14 +1,48 @@
-ul,ol{}
-ul li {}
-ol li {}
-
-strong,  b {//: le texte en gras
+ul,ol{
 
 }
-em , i { //le texte en italique
+strong, b { //: le texte en gras
+
+} 
+em, i { //: le texte en italique
+
+}    
+a { //: les liens hypertexte
+
+} 
+ul, li { //: les listes à puces
+
 }
-a{} 
+code { //: le texte en code
 
-code {}
-hr {}
+}
+hr { //: la ligne de séparation horizontale
+    
+}
 
+.site__main {
+    text-align: center;
+
+    li {
+        list-style: none;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #590000;
+    }
+
+    h2 {
+        font-size: 22px;
+
+    }
+
+    h1 {
+        font-size: 26px;
+        color: #ae3f26;
+    }
+}
