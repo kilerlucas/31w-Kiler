@@ -8,10 +8,10 @@ get_header() ?>
 <?php 
 if (have_posts()):
     while (have_posts()) : the_post();
-        //the_title('<h1>','</h1>');
-        //the_permalink(); ?>
-        <h1><a href="<?php the_permalink(); ?>"><?= get_the_title();  ?> </a></h1>
-
+        // the_title('<h1>','</h1>');
+        // the_permalink(); ?>
+        <h1><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h1>
+        
         <?php 
         // the_content();
         // the_excerpt();
@@ -21,4 +21,3 @@ endif;
 ?>   
 </main> 
 <?php get_footer(); ?>
-
