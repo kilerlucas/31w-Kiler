@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body class="site <?= (is_front_page() ? "no-aside" : ""); ?> ">
+<body class="custom-background site <?= (is_front_page() ? "no-aside" : ""); ?> ">
     <header class="site__entete">
         <section class="logomenu">
             <?php the_custom_logo(); ?>
@@ -23,11 +23,15 @@
                 </label>
             </div>
         </section>
-        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <h2><?php bloginfo('description'); ?></h2> 
+        <?php 
+        $classe = "";
+        if (is_front_page() == false){$classe="invisible";}
+        ?>
+        <h1 class="site__titre <?= $classe ?>"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+        <h2 class="site__soustitre <?= $classe ?>"><?php bloginfo('description'); ?></h2> 
     </header>
     <?php
-    if(!is_front_page())
+    if(is_front_page() == false)
     {
      get_template_part("template-parts/aside");
     }
