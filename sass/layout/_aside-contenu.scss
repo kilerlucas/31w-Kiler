@@ -5,7 +5,6 @@
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(243 239 239);
 }
 
 .site__main {
@@ -13,18 +12,15 @@
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.site__footer {
-  grid-area: footer;
-  background-color: #590000;
-}
 
 .site__aside {
   grid-area: aside;
-  background-color: #ae3f26;
+  background-color: rgb(243 239 239);
 }
 
 .site__aside h3{
   text-align: center;
+  color: rgb(16, 67, 107);
 }
 
 /* body ou un conteneur globale */

@@ -365,11 +365,12 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
+  color: #ff8400;
   /*_ font-family: "Slackey", cursive; _*/
 }
 
@@ -377,11 +378,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .site__main {
@@ -395,14 +396,15 @@ p {
 }
 .site__main h3 {
   font-size: 20px;
-  color: #590000;
+  color: #ff8400;
 }
 .site__main h2 {
   font-size: 22px;
+  color: rgb(16, 67, 107);
 }
 .site__main h1 {
   font-size: 26px;
-  color: #ae3f26;
+  color: rgb(16, 67, 107);
 }
 
 /* -------------------------- COMPOSANT */
@@ -410,7 +412,7 @@ p {
   text-align: center;
 }
 .site__entete a {
-  color: #ae3f26;
+  color: rgb(16, 67, 107);
   text-decoration: none;
 }
 
@@ -418,7 +420,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243, 239, 239);
+  background-color: rgb(61, 110, 147);
 }
 
 .logomenu img {
@@ -493,12 +495,11 @@ p {
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
-  font-family: "Roboto", sans-serif;
   text-decoration: none;
-  color: #ae3f26;
+  color: #d57003;
 }
 .menu-entete-container .menu .menu-item a:hover {
-  color: #590000;
+  color: rgb(255, 255, 255);
 }
 
 .recherche {
@@ -515,18 +516,18 @@ p {
 .blocflex__article {
   margin: 10px;
   padding: 5px;
-  border: 1px solid #aaa;
+  border: 1px solid rgb(192, 152, 115);
   flex: 1 0 300px;
   background-color: rgb(243, 239, 239);
   text-align: center;
 }
 
 a {
-  color: #590000;
+  color: #be7105;
 }
 
 a:hover {
-  color: #302421;
+  color: #361a01;
 }
 
 .blocflex__galerie {
@@ -579,7 +580,7 @@ a:hover {
 }
 
 .site__footer {
-  background-color: #28353b;
+  background-color: rgb(16, 67, 107);
   color: #ffffff;
   padding: 50px 0;
   font-size: 16px;
@@ -641,29 +642,40 @@ a:hover {
   margin-top: 20px;
 }
 
-.social-media-icons {
+.social-icons {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.social-media-icons li {
+.social-icons li {
   display: inline-block;
   margin-right: 10px;
 }
 
-.social-media-icons li:last-child {
+.social-icons li:last-child {
   margin-right: 0;
 }
 
-.social-media-icons a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  background-color: #b45a00;
   border-radius: 50%;
+  background-color: #ff9500;
+  color: #ff9500;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #3b5998; /* cor do Facebook */
+}
+
+.social-icons a i {
+  margin-top: 2px;
 }
 
 body {
@@ -681,7 +693,6 @@ body {
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: rgb(243, 239, 239);
 }
 
 .site__main {
@@ -689,18 +700,14 @@ body {
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
-.site__footer {
-  grid-area: footer;
-  background-color: #590000;
-}
-
 .site__aside {
   grid-area: aside;
-  background-color: #ae3f26;
+  background-color: rgb(243, 239, 239);
 }
 
 .site__aside h3 {
   text-align: center;
+  color: rgb(16, 67, 107);
 }
 
 /* body ou un conteneur globale */

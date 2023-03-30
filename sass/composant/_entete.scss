@@ -1,8 +1,7 @@
 .site__entete {
   text-align: center;
-
   a {
-      color: #ae3f26;
+      color: rgb(16, 67, 107);
       text-decoration: none;
   }
 }
@@ -11,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(243 239 239);
+  background-color: rgb(61, 110, 147);
 }
 
 .logomenu img {
@@ -80,13 +79,12 @@
 
   a{
       white-space: nowrap;
-      font-family: 'Roboto', sans-serif;
       text-decoration: none;
-      color: #ae3f26;
+      color: #d57003;
 
   }
   a:hover {
-      color: #590000;
+      color: rgb(255, 255, 255);
       
   }
 }
