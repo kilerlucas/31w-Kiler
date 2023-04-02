@@ -11,16 +11,15 @@
     <header class="site__entete">  
         <section class="logomenu">
             <?php the_custom_logo(); ?> 
-            <div class="menusearch">
-                <input type="checkbox" id="chkBurger">
+            <div class="menusearch active">
                 <?php wp_nav_menu(array(
                     'menu' => 'entete',
                     'container' => 'nav'
                 )); ?> 
-                <?= get_search_form(); ?>
-                <label for="chkBurger" class="burger">
+                <label class="burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">
                 </label>   
+                <?= get_search_form(); ?>
             </div> 
         </section>
         <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
