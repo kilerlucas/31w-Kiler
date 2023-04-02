@@ -631,6 +631,36 @@ a:hover {
   width: 100vw;
 }
 
+.spacer {
+  flex: 1;
+}
+
+.right-column {
+  margin-right: 100px;
+}
+
+.main-links-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.main-links-container .menu-item {
+  display: inline-block;
+  background-color: rgb(16, 67, 107);
+  padding: 10px 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.main-links-container .menu-item a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+}
+.main-links-container .menu-item:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(20, 83, 132);
+}
+
 .site__footer a {
   color: #ffffff;
   text-decoration: none;
@@ -714,12 +744,14 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-  background-color: #3b5998; /* cor do Facebook */
+.social-icons a:hover img {
+  opacity: 0.6;
 }
 
-.social-icons a i {
-  margin-top: 2px;
+.social-icons a img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 body {
