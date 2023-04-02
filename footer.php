@@ -3,11 +3,12 @@
         <?php
         wp_nav_menu(
             array(
-                'theme_location' => 'menu_footer',
-                'menu'           => 'entete',
+                'menu'           => 'note-wp',
                 'container'      => 'nav'
             )
         );
+       
+        
         ?>
     </div>
     <div class="container">
