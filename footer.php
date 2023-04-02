@@ -32,4 +32,14 @@
     </div>
 </footer>
 
+<script>
+
+burger = document.querySelector(".burger");
+burger.addEventListener("click", function(){
+    document.querySelector(".menusearch").classList.toggle("active");
+});
+
+
+</script>
+
 <?php wp_footer(); ?>
