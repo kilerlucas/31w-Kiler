@@ -3,7 +3,7 @@
         <?php
         wp_nav_menu(
             array(
-                'menu'           => 'note-wp',
+                'menu'           => 'entete',
                 'container'      => 'nav'
             )
         );
