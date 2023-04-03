@@ -78,3 +78,32 @@ function perso_menu_item_title($title, $item, $args) {
 return $title ;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
+// widgets
+function enregistrer_sidebar() {
+    register_sidebar(array(
+        'name' => 'Pied de page 1',
+        'id' => 'footer-1',
+        'description' => 'Une zone pour afficher des widgets.',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+    ));
+
+    register_sidebar(array(
+        'name' => 'Pied de page 2',
+        'id' => 'footer-2',
+        'description' => 'Une zone pour afficher des widgets.',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+    ));
+
+    register_sidebar(array(
+        'name' => 'Pied de page 3',
+        'id' => 'footer-3',
+        'description' => 'Une zone pour afficher des widgets.',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+    ));
+}
+
+add_action( 'widgets_init', 'enregistrer_sidebar' );

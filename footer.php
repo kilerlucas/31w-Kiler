@@ -1,4 +1,12 @@
 <footer class="site__footer">
+
+    <section class="widgets">
+        <div class="widget-container"><?php dynamic_sidebar('footer-1'); ?></div>
+        <div class="widget-container"><?php dynamic_sidebar('footer-2'); ?></div> 
+        <div class="widget-container"><?php dynamic_sidebar('footer-3'); ?></div> 
+    </section>
+
+
     <div class="main-links-container">
         <?php
         wp_nav_menu(
