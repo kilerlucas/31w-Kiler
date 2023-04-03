@@ -3,8 +3,7 @@
     Modèle index.php représente le modèle par défaut du thème
 */
 get_header() ?>
-<main class="site__main">
-    <h3>index.php</h3>
+<main class="site__main single">
 <?php 
 if (have_posts()):
     while (have_posts()) : the_post();
