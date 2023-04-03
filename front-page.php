@@ -3,10 +3,24 @@
 *    Modèle index.php représente le modèle par défaut du thème
 */
 get_header() ?>
-<main class="site__main">
+
+
+<main class="site__main home">
     <!-- <code>front-page.php</code> -->
 
-    <section class="blocflex">
+    <!-- <section></section> -->
+   
+    
+<section class="hero">
+    <div class="hero-content">
+    <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
+    <h2><?php  bloginfo('description'); ?></h2>
+    <hr>
+    <h2>pour Lucas Kiler</h2>
+    </div>
+</section>
+
+    <section class="blocflex mw">
         <?php 
         if (have_posts()):
             while (have_posts()) : the_post(); ?>

@@ -5,3 +5,28 @@ body {
 .liensfrontpage {
     text-align: center;
 }
+
+.hero {
+    width: 100%;
+    height: 75vh;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    .hero-content {
+        padding: 100px 50px;
+        max-width: 540px;
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+}
+
+
+

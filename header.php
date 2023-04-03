@@ -22,8 +22,6 @@
                 <?= get_search_form(); ?>
             </div> 
         </section>
-        <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
-        <h2><?php  bloginfo('description'); ?></h2>
     </header>
     <?php 
     if (is_front_page() == false)
