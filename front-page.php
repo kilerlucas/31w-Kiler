@@ -17,6 +17,21 @@ get_header() ?>
     <h2><?php  bloginfo('description'); ?></h2>
     <hr>
     <h2>pour Lucas Kiler</h2>
+
+    <?php $pages = get_pages(array(
+        'number' =>  3
+    ));
+    
+    if($pages):
+        foreach($pages as $page):?>
+            <a class="latest-pages" href="/<?= $page->post_name; ?>"><?= $page->post_title; ?></a>
+            <?php
+        endforeach;
+    endif;
+    
+    
+    ?>
+
     </div>
 </section>
 
