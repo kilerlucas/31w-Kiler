@@ -829,6 +829,7 @@ body {
   padding: 0px;
 }
 .site__main.single {
+  min-height: 80vh;
   background-color: white;
   width: 100%;
 }
