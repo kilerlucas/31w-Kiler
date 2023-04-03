@@ -37,7 +37,7 @@
 
 
 document.querySelector(".burger").addEventListener("click", function(){ document.querySelector(".menusearch").classList.toggle("active"); });
-document.querySelector(".menu-entete-container").addEventListener("click", function(){ document.querySelector(".menusearch").classList.toggle("active"); });
+document.querySelector(".menu-entete-container").addEventListener("click", function(){ document.querySelector(".menusearch").classList.remove("active"); });
 
 </script>
 

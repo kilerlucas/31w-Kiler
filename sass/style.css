@@ -770,6 +770,12 @@ body {
   grid-area: header;
 }
 
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container a {
+    font-size: 22px;
+  }
+}
+
 .site__main {
   padding: 30px;
   grid-area: main;
@@ -785,6 +791,7 @@ body {
 .site__aside {
   grid-area: aside;
   background-color: rgb(243, 239, 239);
+  padding-right: 50px;
 }
 
 .site__aside h3 {
