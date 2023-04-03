@@ -501,13 +501,13 @@ p {
   }
 }
 
-.menu {
+.menu-entete-container .menu {
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
 }
 @media screen and (max-width: 500px) {
-  .menu {
+  .menu-entete-container .menu {
     position: absolute;
     width: 200px;
     flex-direction: row;
@@ -515,7 +515,7 @@ p {
     align-items: center;
   }
 }
-.menu .menu-item {
+.menu-entete-container .menu .menu-item {
   display: inline;
   min-width: 150px;
   background-color: rgb(16, 67, 107);
@@ -524,12 +524,12 @@ p {
   text-transform: uppercase;
   cursor: pointer;
 }
-.menu .menu-item a {
+.menu-entete-container .menu .menu-item a {
   white-space: nowrap;
   text-decoration: none;
   color: white;
 }
-.menu .menu-item:hover {
+.menu-entete-container .menu .menu-item:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(20, 83, 132);
 }
@@ -771,8 +771,12 @@ body {
 }
 
 .site__main {
+  padding: 30px;
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .site__aside {
