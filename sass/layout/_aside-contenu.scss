@@ -32,7 +32,7 @@
   &.single {
     min-height: 80vh;
     background-color: white;
-    width: 100%;
+    width: calc(100% - 60px);
   }
 }
 

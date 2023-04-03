@@ -14,7 +14,15 @@ if (have_posts()):
         <?php 
         // the_content();
         // the_excerpt();
-        echo wp_trim_words(get_the_excerpt(), 4);
+        echo the_content();
+
+        if (is_page()) {
+            echo "<strong>Date et heure: </strong>" . get_field('date_et_heure') . "<br>";
+            echo "<strong>Téléphon: </strong>" . get_field('telefone') . "<br>";
+            echo "<strong>Courriel: </strong>" . get_field('courriel') . "<br>";
+            echo "<strong>Site web: </strong><a href=\"" . get_field('site_web') . "\"> ".get_field('site_web')." </a><br>";
+        }
+        
     endwhile;
 endif;
 ?>   
