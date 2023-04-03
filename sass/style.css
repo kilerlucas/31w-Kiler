@@ -778,6 +778,9 @@ body {
   margin: 0 auto;
   text-align: left;
 }
+.site__main.single {
+  background-color: white;
+}
 
 .site__aside {
   grid-area: aside;
