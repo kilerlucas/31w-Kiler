@@ -6,11 +6,14 @@
 $titre = get_the_title();
 $sigle = substr($titre, 0, 7);
 $titre_long = substr($titre, 7, -5);
-$duree = "90h";
+$duree = get_field('dureee');
 ?>
 <article class="blocflex__article">
+    
     <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>
+    <strong><?= get_field('domaine') ?></strong>
     <h6><?= $titre_long ?></h6>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-    <p><?= $duree ?></p>
+    <strong><?= get_field('enseignant') ?></strong>
+    <p><?= $duree ?> - <?= get_field('location') ?></p>
 </article>

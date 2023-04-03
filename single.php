@@ -11,6 +11,15 @@ if (have_posts()):
         // usar funcao in_category (ver aside em template-parts)
         the_title('<h1>','</h1>');
         the_content();
+
+        if (in_category('cours')) {
+            echo "<strong>Domaine: </strong>" . get_field('domaine') . "<br>";
+            echo "<strong>Enseignant: </strong>" . get_field('enseignant') . "<br>";
+            echo "<strong>Duree: </strong>" . get_field('dureee') . "<br>";
+            echo "<strong>Location: </strong>" . get_field('location') . "<br>";
+        }
+
+        
     endwhile;
 endif;
 ?>   
