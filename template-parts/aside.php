@@ -39,7 +39,7 @@
 
         <?php else: ?>
 
-            <h3>The <br />Galerie</h3>
+            <h2>The <br />Galerie</h2>
 
         <?php endif ?>
 

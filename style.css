@@ -325,7 +325,7 @@ template {
   display: none;
 }
 
-/* Dêfinition du box sizing */
+/* Définition du box sizing */
 ::before,
 ::after {
   box-sizing: inherit;
@@ -416,29 +416,74 @@ p {
   text-decoration: none;
 }
 
+.custom-logo {
+  position: absolute;
+  margin-left: 30px;
+  margin-top: -30px;
+  height: 140px;
+  width: 140px;
+}
+
 .logomenu {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(61, 110, 147);
 }
-
-.logomenu img {
-  margin-left: 30px;
+@media screen and (max-width: 800px) {
+  .logomenu {
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logomenu .custom-logo {
+    width: 60px;
+    margin-left: 10px;
+    height: 60px;
+  }
 }
 
 .menusearch {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .menusearch {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 680px) {
+  .menusearch {
+    flex-direction: row-reverse;
+  }
+  .menusearch .menu-entete-container {
+    display: none;
+    padding-top: 30px;
+    margin-top: 10px;
+  }
+  .menusearch .menu-entete-container .menu {
+    margin-top: 30px !important;
+  }
+}
+.menusearch.active .menu-entete-container {
+  position: absolute;
+  display: block;
+}
+.menusearch.active .menu-entete-container .menu {
+  transform: translate(30px, 140px);
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .menusearch.active .menu-entete-container .menu {
+    transform: translate(-200px, -10px);
   }
 }
 
@@ -446,71 +491,73 @@ p {
   display: none;
 }
 
-#chkBurger:checked ~ .menu-entete-container {
-  transform: translateX(0);
-}
-
 .burger {
   display: block;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 680px) {
   .burger {
     display: none;
   }
 }
 
-.menu-entete-container {
-  transform: translateX(300px);
-  transition: transform 0.25s;
-}
-@media screen and (min-width: 500px) {
-  .menu-entete-container {
-    transform: translateX(0);
-  }
-}
 .menu-entete-container .menu {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
   list-style-type: none;
-  font-size: clamp(1.125rem, 1.0417rem + 0.2667vw, 1.375rem);
-  gap: 30px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .menu-entete-container .menu {
+    position: absolute;
+    width: 200px;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 780px) {
-  .menu-entete-container .menu {
-    flex-direction: column;
-  }
-}
 .menu-entete-container .menu .menu-item {
-  flex: 1 0 70px;
+  display: inline;
   min-width: 150px;
+  background-color: rgb(16, 67, 107);
+  padding: 10px 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 .menu-entete-container .menu .menu-item a {
   white-space: nowrap;
   text-decoration: none;
-  color: #d57003;
+  color: white;
 }
-.menu-entete-container .menu .menu-item a:hover {
+.menu-entete-container .menu .menu-item:hover {
   color: rgb(255, 255, 255);
+  background-color: rgb(20, 83, 132);
 }
 
-.recherche {
-  display: flex;
-  flex-wrap: nowrap;
+.recherche input {
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+}
+.recherche button {
+  margin-left: -35px;
+  width: 35px;
+  height: 37px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(16, 67, 107);
+  color: white;
 }
 
 .blocflex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.blocflex.mw {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .blocflex__article {
@@ -582,9 +629,47 @@ a:hover {
 .site__footer {
   background-color: rgb(16, 67, 107);
   color: #ffffff;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
   font-size: 16px;
   width: 100vw;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.right-column {
+  margin-right: 100px;
+}
+
+.main-links-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.main-links-container .menu-item {
+  display: inline-block;
+  background-color: rgb(16, 67, 107);
+  padding: 10px 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.main-links-container .menu-item a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+}
+.main-links-container .menu-item:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(20, 83, 132);
+}
+
+.widgets {
+  display: flex;
+  flex-direction: row;
+}
+.widgets .widget-container {
+  flex: 1 0 33%;
 }
 
 .site__footer a {
@@ -670,20 +755,57 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-  background-color: #3b5998; /* cor do Facebook */
+.social-icons a:hover img {
+  opacity: 0.6;
 }
 
-.social-icons a i {
-  margin-top: 2px;
+.social-icons a img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 body {
-  background-color: white;
+  background-color: rgb(240, 240, 240);
 }
 
 .liensfrontpage {
   text-align: center;
+}
+
+.hero {
+  width: 100%;
+  min-height: 75vh;
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.hero .hero-content {
+  padding: 100px 50px;
+  max-width: 540px;
+}
+@media screen and (max-width: 680px) {
+  .hero .hero-content {
+    padding: 0px 30px 50px 30px;
+  }
+}
+.hero h1 {
+  font-size: 68px;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero .latest-pages {
+  background-color: #be7105;
+  padding: 10px 30px;
+  color: white;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.hero .latest-pages:first-of-type {
+  margin-top: 50px;
 }
 
 /* -------------------------- LAYOUT */
@@ -692,17 +814,37 @@ body {
 */
 .site__entete {
   grid-area: header;
-  padding: 1rem clamp(1rem, 3vw, 20rem);
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container a {
+    font-size: 22px;
+  }
 }
 
 .site__main {
+  padding: 30px;
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.site__main.home {
+  max-width: none;
+  width: 100%;
+  padding: 0px;
+}
+.site__main.single {
+  min-height: 80vh;
+  background-color: white;
+  width: calc(100% - 60px);
 }
 
 .site__aside {
   grid-area: aside;
   background-color: rgb(243, 239, 239);
+  padding-right: 50px;
 }
 
 .site__aside h3 {
