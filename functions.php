@@ -1,5 +1,5 @@
 <?php
-//testeeeee
+
 // Enfiler la feuille de style
 function ajouter_styles() {
     wp_enqueue_style('31w-style-principal', // id de la feuille de style
