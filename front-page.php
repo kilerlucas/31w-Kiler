@@ -13,24 +13,25 @@ get_header() ?>
     
 <section class="hero">
     <div class="hero-content">
-    <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
-    <h2><?php  bloginfo('description'); ?></h2>
-    <hr>
-    <h2>pour Lucas Kiler</h2>
+        <h1>TP2</h1>
+        <h1><a href="<?php  bloginfo('url'); ?>"><?php  bloginfo('name'); ?></a></h1> 
+        <h2><?php  bloginfo('description'); ?></h2>
+        <hr>
+        <h2>pour Lucas Kiler</h2>
 
-    <?php $pages = get_pages(array(
-        'number' =>  3
-    ));
-    
-    if($pages):
-        foreach($pages as $page):?>
-            <a class="latest-pages" href="/<?= $page->post_name; ?>"><?= $page->post_title; ?></a>
-            <?php
-        endforeach;
-    endif;
-    
-    
-    ?>
+        <?php $pages = get_pages(array(
+            'number' =>  3
+        ));
+        
+        if($pages):
+            foreach($pages as $page):?>
+                <a class="latest-pages" href="/<?= $page->post_name; ?>"><?= $page->post_title; ?></a>
+                <?php
+            endforeach;
+        endif;
+        
+        
+        ?>
 
     </div>
 </section>

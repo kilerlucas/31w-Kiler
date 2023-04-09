@@ -4,9 +4,9 @@
  * un article provenant d'un conteneur  de class blocflex
  */
 $titre = get_the_title();
-$sigle = substr($titre, 0, 7);
-$titre_long = substr($titre, 7, -5);
-$duree = get_field('dureee');
+//$sigle = substr($titre, 0, 7);
+//$titre_long = substr($titre, 7, -5);
+//$duree = get_field('dureee');
 ?>
 <article class="blocflex__article">
     
