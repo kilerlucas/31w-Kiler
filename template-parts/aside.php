@@ -9,13 +9,34 @@
         <?php 
 
         if (!is_page()) {
-            $lemenu = 'note-wp';
-            if (in_category('cours'))
-            {$lemenu = 'cours';}
-            wp_nav_menu(array(
-                "menu" => $lemenu,
-                "container" => "nav"
-            )); 
+            
+            if (in_category('cours')) {
+
+                $posts = get_posts( array(
+                    'numberposts' => -1,
+                    'tax_query' => array(
+                    array(
+                    'taxonomy' => 'category',
+                    'field'    => 'slug',
+                    'terms'    => array('cours'),
+                    )
+                )) );
+
+                ?><nav class="menu-note-wp-container"><ul id="menu-note-wp" class="menu"> <?php
+
+                foreach ($posts as $post): ?>
+                    <li class="menu-item"><a class="latest-pages" href="/<?= $post->post_name; ?>"><?= substr($post->post_title, 0, 7); ?></a></li>
+                <?php endforeach; ?>
+                </ul></nav>
+                <?php
+
+            } else {
+                wp_nav_menu(array(
+                    "menu" => 'note-wp',
+                    "container" => "nav"
+                )); 
+            }
+            
         } else {
             $pages = get_pages(array(
                 'number' =>  3
