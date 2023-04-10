@@ -24,8 +24,10 @@ get_header() ?>
         ));
         
         if($pages):
-            foreach($pages as $page):?>
-                <a class="latest-pages" href="/<?= $page->post_name; ?>"><?= $page->post_title; ?></a>
+            foreach($pages as $index => $page):?>
+                <a class="latest-pages" href="/<?= $page->post_name; ?>">
+                <img src="/wp-content/themes/31w-Lucas-Kiler/img/<?= $index + 1 ?>.svg" alt="" />
+                <?= $page->post_title; ?></a>
                 <?php
             endforeach;
         endif;
