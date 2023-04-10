@@ -8,6 +8,11 @@ get_header() ?>
 <?php 
 if (have_posts()):
     while (have_posts()) : the_post();
+
+        if (is_page()) {
+            ?><img width="100%" src="<?= get_field('image') ?>" alt=""><?php 
+        }
+
         // usar funcao in_category (ver aside em template-parts)
         the_title('<h1>','</h1>');
         the_content();

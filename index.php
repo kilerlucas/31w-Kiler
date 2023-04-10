@@ -8,7 +8,13 @@ get_header() ?>
 if (have_posts()):
     while (have_posts()) : the_post();
         // the_title('<h1>','</h1>');
-        // the_permalink(); ?>
+        // the_permalink();
+
+        if (is_page()):
+            ?><img width="100%" src="<?= get_field('image') ?>" alt="">
+        <?php 
+        endif; ?>
+
         <h1><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h1>
         
         <?php 
