@@ -8,7 +8,7 @@
         <h3>Menu Secondaire</h3>
         <?php 
 
-        if (!is_page()) {
+        if (!is_page() && ! is_404()) {
             
             if (in_category('cours')) {
 
