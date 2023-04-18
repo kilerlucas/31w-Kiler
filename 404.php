@@ -6,13 +6,10 @@ get_header() ?>
 
 
 <main class="site__main home">
-    <!-- <code>front-page.php</code> -->
-
-    <!-- <section></section> -->
    
     
-    <section class="hero">
-        <div class="hero-content">
+    <section class="background-image">
+        <div>
             <h1>Erreur 404</h1>
             <h2>Page introuvable, vous pouvez tenter une recherche</h2>
 
@@ -32,20 +29,22 @@ get_header() ?>
         </form>
     </section>
 
-    <article class="menu-cours-container">
-        <h5><a href="<?php the_permalink(); ?>"> <?= $sigle; ?></a></h5>
-        <strong><?= get_field('domaine') ?></strong>
-        <h6><?= $titre_long ?></h6>
-        <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-        <strong><?= get_field('enseignant') ?></strong>
-        <p><?= $duree ?> - <?= get_field('location') ?></p>
-    </article>
+    <h2>Nos Choix de cours</h2>
+    <div class="menu-note-wp-cpontainer">
+        <?php
+        $category = get_queried_object();
+        $args = array(
+           'category_name' => $category->slug,
+           'orderby' => 'title',
+           'order' => 'ASC'
+        );
+       
+        ?>
+    </div>
+
+    <h2>Les note de cours</h2>
 
 
-    <article class="menu-note-wp-container">
-        <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
-        <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-    </article>
 
 
 

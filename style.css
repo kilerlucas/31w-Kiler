@@ -864,6 +864,10 @@ body {
   opacity: 0.5;
 }
 
+.campo {
+  width: 100%;
+}
+
 /* -------------------------- LAYOUT */
 /**
 * Mise en page - display grid
