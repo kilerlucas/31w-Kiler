@@ -802,20 +802,66 @@ body {
   font-size: 22px;
   display: block;
   margin-bottom: 20px;
-  max-width: 200px;
+  max-width: 250px;
+}
+.hero .latest-pages img {
+  width: 45px;
+  height: 45px;
+  margin-left: -10px;
+  margin-right: 10px;
+  filter: hue-rotate(90deg);
+  float: left;
 }
 .hero .latest-pages:first-of-type {
   margin-top: 50px;
 }
 
-.page_404 {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  background-color: rgb(243, 239, 239);
-  align-items: center;
-  border: 2px solid #d7951a;
+.hero2 {
+  width: 100%;
+  min-height: 75vh;
+  background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fcottagelife.com%2Foutdoors%2Fabandoned-for-years-these-overgrown-buildings-demonstrate-natures-power-draft%2F&psig=AOvVaw0A2H-3ZQR4u2uOTFo5QUbe&ust=1681929593367000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKj00ZGKtP4CFQAAAAAdAAAAABAE) no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.hero2 .hero2-content {
+  padding: 100px 50px;
+  max-width: 540px;
+}
+@media screen and (max-width: 680px) {
+  .hero2 .hero2-content {
+    padding: 0px 30px 50px 30px;
+  }
+}
+.hero2 h1 {
+  font-size: 68px;
+}
+.hero2 h2 {
+  font-size: 36px;
+}
+.hero2 .latest-pages {
+  background-color: #be7105;
+  padding: 10px 30px;
+  color: white;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.hero2 .latest-pages img {
+  width: 45px;
+  height: 45px;
+  margin-left: -10px;
+  margin-right: 10px;
+  filter: hue-rotate(90deg);
+  float: left;
+}
+.hero2 .latest-pages:first-of-type {
+  margin-top: 50px;
+}
+
+.background-image {
+  background-image: url("/wp-content/themes/31w-Lucas-Kiler/img/seasidehouse.jpg");
+  opacity: 0.5;
 }
 
 /* -------------------------- LAYOUT */

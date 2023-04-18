@@ -39,7 +39,16 @@ body {
         font-size: 22px;
         display: block;
         margin-bottom: 20px;
-        max-width: 200px;
+        max-width: 250px;
+
+        img {
+            width: 45px;
+            height: 45px;
+            margin-left: -10px;
+            margin-right: 10px;
+            filter: hue-rotate(90deg);
+            float: left;
+        }
 
         &:first-of-type{
             margin-top: 50px;
@@ -49,5 +58,56 @@ body {
 
 }
 
+.hero2 {
+    width: 100%;
+    min-height: 75vh;
+    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fcottagelife.com%2Foutdoors%2Fabandoned-for-years-these-overgrown-buildings-demonstrate-natures-power-draft%2F&psig=AOvVaw0A2H-3ZQR4u2uOTFo5QUbe&ust=1681929593367000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKj00ZGKtP4CFQAAAAAdAAAAABAE) no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    .hero2-content {
+        padding: 100px 50px;
+        max-width: 540px;
+
+        @media screen and (max-width: 680px) {
+            padding: 0px 30px 50px 30px;
+        }
+            
+        
+    }
+
+    h1 {
+        font-size: 68px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+    
+    .latest-pages {
+        background-color: #be7105;
+        padding: 10px 30px;
+        color: white;
+        font-size: 22px;
+        display: block;
+        margin-bottom: 20px;
+        max-width: 250px;
+
+        img {
+            width: 45px;
+            height: 45px;
+            margin-left: -10px;
+            margin-right: 10px;
+            filter: hue-rotate(90deg);
+            float: left;
+        }
+
+        &:first-of-type{
+            margin-top: 50px;
+         }
+    }
+    
+
+}
 
 
